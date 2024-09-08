@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: flex-start; /* Aligns content starting from the top */
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh; /* Ensures height adapts to screen size */
+    padding-top: 10px; /* Prevents top part from being cut off */
+    background-image: url('../Images/newtrain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+h1{
+    margin-bottom: 25vh;
+}
+
+.actionBox{
+    width: 50vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 50%;
+    height: 20%;
+    border-radius: 15px;
+    background-color: black;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+/* Optional: Adjust the background size specifically for tablets and mobile screens */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Prevents excessive cropping on smaller screens */
+    }
+}
