@@ -24,6 +24,7 @@ export default function TimeTable() {
 
     const findTime = () => {
         console.log("I am findtime function");
+        let check=0;
         table.forEach((item) => {
             if (item.TableID === table_Id && item.TripNumber === tripNum) {
                 console.log(`Starting Station : ${item.StartingStation}`);
@@ -34,11 +35,14 @@ export default function TimeTable() {
                 console.log(`Table ID : ${table_Id}`);
                 setStartAT(item.PickTime);
                 setArrivedAt(item.ArrivalTime);
+                check=1;
             }
-            else{
-                alert('Inavlid Trip Number or Table ID Recheck and Try Again');
-            }
+
         });
+        if(check===0){
+            alert('Inavlid Trip Number or Table ID Recheck and Try Again');
+
+        }
     }
 
     return (
