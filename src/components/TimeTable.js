@@ -35,6 +35,9 @@ export default function TimeTable() {
                 setStartAT(item.PickTime);
                 setArrivedAt(item.ArrivalTime);
             }
+            else{
+                alert('Inavlid Trip Number or Table ID Recheck and Try Again');
+            }
         });
     }
 

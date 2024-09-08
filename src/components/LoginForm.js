@@ -31,6 +31,7 @@ const Login = () => {
       navigate('/home');
     } else {
       console.log('Invalid credentials');
+      alert('!!Username or password is Incorrect')
     }
   };
 
